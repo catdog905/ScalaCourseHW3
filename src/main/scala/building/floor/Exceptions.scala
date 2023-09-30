@@ -1,0 +1,5 @@
+package building.floor;
+
+sealed trait CommercialFloorInstantiationException extends Exception
+
+case object ZeroAmountOfEstablishments extends CommercialFloorInstantiationException
