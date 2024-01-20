@@ -1,0 +1,12 @@
+package building
+
+sealed trait BuildingInstantiationException extends Exception
+case object NullArgumentsPassed extends BuildingInstantiationException
+
+sealed trait WomanMaxAgeError extends Exception
+
+case object NoWomanInBuilding extends WomanMaxAgeError
+
+sealed trait CountCommercialAvgError
+
+case object ZeroBuildingsAmount extends CountCommercialAvgError
